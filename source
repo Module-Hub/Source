@@ -66,6 +66,7 @@ local RootParent = Camera
 			RootParent = nil
 		end
 	end
+end
 
 if gethui then
 	for _, Interface in ipairs(gethui():GetChildren()) do
