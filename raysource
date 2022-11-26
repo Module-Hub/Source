@@ -97,17 +97,8 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nOrion Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
+	warn("\nRayField - Failed to load Feather Icons. Error code: " .. Response .. "\n")
 end	
-
-local function GetIcon(IconName)
-	if Icons[IconName] ~= nil then
-		return Icons[IconName]
-	else
-		return nil
-	end
-end 
-
 -- Services
 
 local UserInputService = game:GetService("UserInputService")
