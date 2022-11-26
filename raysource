@@ -93,7 +93,7 @@ local RayfieldLibrary = {
 local Icons = {}
 
 local Success, Response = pcall(function()
-	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/Verse-Hub/icons/main/icons.json")).icons
+	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/Module-Hub/icons/main/icons.json")).icons
 end)
 
 if not Success then
