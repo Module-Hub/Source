@@ -90,15 +90,6 @@ local RayfieldLibrary = {
 	}
 }
 
-local Icons = {}
-
-local Success, Response = pcall(function()
-	Icons = HttpService:JSONDecode(game:HttpGetAsync("https://raw.githubusercontent.com/Module-Hub/icons/main/icons.json")).icons
-end)
-
-if not Success then
-	warn("\nRayField - Failed to load Feather Icons. Error code: " .. Response .. "\n")
-end	
 -- Services
 
 local UserInputService = game:GetService("UserInputService")
